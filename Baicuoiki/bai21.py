@@ -18,4 +18,15 @@ if __name__ == "__main__":
         #chạy vòng lặp lòng j i[0] = 1, j[2]=3 => 1+3 = 4
 # chạy lồng i i[1] phải chạy hết cái vòng lặp j[1],j[2],.....
 
-
+#BAI22
+def question_22(nums: list[int]) -> None:
+    ds=[]
+    for i in nums:
+        if i != 0:
+            ds.append(i)
+    so0=len(nums)-len(ds)
+    for i in range(so0):
+        ds.append(0)
+    return ds
+if __name__== "__main__":
+    print(question_22([1,0,3,4,6,0,5,9]))
