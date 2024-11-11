@@ -7,7 +7,7 @@ Created on Fri Nov  8 23:16:55 2024
 
 def question_23(nums: list[int]) -> bool:
     for i in range(len(nums)):
-        if nums[i] == nums.count(2): #count là số đếm, bị 
+        if nums.count(nums[i])>1:
             return True 
         else:
             return False
