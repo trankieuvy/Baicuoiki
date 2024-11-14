@@ -16,3 +16,12 @@ def question_12():
     return "{}  là số nguyên tố".format(n)
 if __name__ == "__main__":
      print(question_12())
+    #
+def question_23(nums: list[int]) -> bool:
+    for i in range(len(nums)):
+        if nums.count(nums[i])>1:
+            return True
+    return False
+if __name__=="__main__":
+    print(question_23([1,2,3,4,5,5,5,5,2,1,1,1,3]))
+    print(question_23([1,2,3,4,5]))
